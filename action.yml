@@ -1,0 +1,10 @@
+name: 'PKGBUILD action'
+description: 'Building Archlinux PKGBUILD package'
+inputs:
+  pkgdir:
+    description: "Relative path to directory containing the PKGBUILD file."
+    required: false
+    default: "."
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
